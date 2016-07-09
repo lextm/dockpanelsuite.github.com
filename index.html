@@ -35,15 +35,36 @@
 
 <h3>Latest Release</h3>
 
-<p>The latest stable release, DockPanel Suite 2.9.0</a>, was released on 26 Nov 2013. Get it via <a href="https://github.com/dockpanelsuite/binaries/raw/master/DockPanel_2_9_0.zip">direct download</a> or <a href="http://nuget.org/packages/DockPanelSuite">NuGet</a>.</p>
+<p>The latest stable release, DockPanel Suite 2.10.0</a>, was released on 6 Jul 2016. Get it via <a href="https://github.com/dockpanelsuite/dockpanelsuite/archive/Release_2.10.zip">direct download</a> or <a href="http://nuget.org/packages/DockPanelSuite">NuGet</a>.</p>
 
 <p>Changelog:
-<pre><code>- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/81">Issue #81</a>: Add an event to the DockPanel that will be raised when the value of the AutoHideWindow's ActiveContent property changes.
-- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/123">Issue #123</a>: Opt-in ShowAutoHideContentOnHover feature to require a tab to be clicked on to show autohide content vice the current behavior of showing on hover.
-- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/128">Issue #128</a>: Fixed issues with the sample application: "Close All" should only close documents and disable "close all but this" when there are no documents.
-- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/129">Issue #129</a>: Fixed ArgumentException with VS2005 theme.
-- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/130">Issue #130</a>: Fixed NullReferenceException when setting DockPanel.CloseButton while the content is hidden. Fixed issue that prevented close button from being show when made visible programatically.
-- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/138">Issue #138</a>: When showing a content, prefer to place it in the active pane, otherwise default to the first available.</code></pre>
+<pre><code>- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/19">Issue #19</a>: Added Visual Studio 2012 Light theme.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/112">Issue #112</a>: Changed theme related interfaces.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/121">Issue #121</a>: Added a close button on tab (VS2012 theme only).
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/124">Issue #124</a>: Fixed flickers of VS2012 Light theme.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/143">Issue #143</a>: Memory leak in VS2012LighSplitterControl class.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/161">Issue #161</a>: Tabs docked at the bottom close unexpectedly.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/163">Issue #163</a>: Hatch marks over the pin and close button on a small window.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/172">Issue #172</a>: Skin demo button broken in sample project.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/175">Issue #175</a>: Handling long headings patch from @lukeer.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/183">Issue #183</a>: VS2012 Theme enhancement in sample project.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/189">Issue #189</a>: "Show Document Icon" doesn't work with the skin VS2012 Light theme.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/241">Issue #241</a>: Multiple UI thread support is added.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/261">Issue #261</a>: Addessed memory leak when a dock content is closed.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/278">Issue #278</a>: Ignore invisible content panes when being dragged and accessibility improvement.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/300">Issue #300</a>: Hide DockPanel.Skin in designer.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/306">Issue #306</a>: Added Visual Studio 2013 Blue theme.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/315">Issue #315</a>: Non default themes are now in separate assemblies/NuGet packages.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/322">Issue #322</a>: Added a drag event notification.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/325">Issue #325</a>: Close tabs without activating them first.
+- <a href="https://github.com/dockpanelsuite/dockpanelsuite/issues/138">Issue #329</a>: Revised gradient color tab rendering.</code></pre>
+
+BREAKING CHANGES
+Except default VS2005 theme, all other themes are published as separate NuGet packages.
+<pre><code>- <a href="https://www.nuget.org/packages/DockPanelSuite.ThemeVS2003/2.10.0">Visual Studio 2003 Theme</a>
+- <a href="https://www.nuget.org/packages/DockPanelSuite.ThemeVS2012Light/2.10.0">Visual Studio 2012 Light Theme</a>
+- <a href="https://www.nuget.org/packages/DockPanelSuite.ThemeVS2013Blue/2.10.0">Visual Studio 2013 Blue Theme</a>
+- (Not recommended) <a href="https://www.nuget.org/packages/DockPanelSuite.ThemeVS2005Multithreading/2.10.0">Visual Studio 2005 Theme with multiple UI threads support</a></code></pre>
 
 <p style="text-align:right">[<a href="http://dockpanelsuite.com/releases.html">View past releases</a>]</p>
 
